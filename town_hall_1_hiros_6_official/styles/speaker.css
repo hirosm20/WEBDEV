@@ -1,0 +1,182 @@
+/* the styles for the elements */
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 800px;
+	margin: 0 auto;
+	border:3px solid #AFFEE8;
+	background-color: #fffded ;
+}
+
+/* the styles for the header */
+header {
+	border-bottom:3px solid #AFFEE8;
+	padding-top: 1.5em;
+	padding-bottom:2em;
+	background-image: linear-gradient(30deg, #4CC3A2 0%, 
+	#91D1D1 30%, #AFFEE8 50%,  #91D1D1 80%, #4CC3A2 100%);
+}
+
+header img {
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+}
+
+header h2{
+	font-size:170%;
+	color: #9B4600;
+	
+}
+
+header h3{
+	font-size: 130%;
+	font-family: italic;
+	color: #9B4600;
+}
+
+span {
+	text-shadow: -2px -2px 3px;
+	color: #9B4600;
+} 
+/*This is for main*************************************************************/
+main {
+	clear: left;
+
+}
+/* This is for the section***********************************************/
+section{
+	width: 525px;
+	float: right;
+	padding-left:20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 0px;
+}
+section h1{
+	color:#4CC3A2;
+	font-size: 150%;
+	margin: 0;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+section h2{
+	font-size: 130%;
+	color: #4CC3A2;
+	padding-top: .5em;
+	padding-bottom: .25em; 
+}
+
+section p{
+	padding-bottom: .5em;
+}
+
+section blockquote{
+	padding-right:2em;
+	padding-left:2em;
+	font-style: italic;
+ }
+
+ section ul{
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+
+section li{
+	padding-bottom: .35em;
+}
+ /*This is for article****************************************************/
+
+article{
+	padding-top:.5em;
+	padding-bottom: .5em;
+	
+ }
+
+ article h2{
+	 padding-top: 0;
+ }
+
+ article h3{
+	font-size: 105%;
+	padding-bottom: .25em;
+ }
+
+ article img{
+	 float: right;
+	 border-style:solid;
+	 border-width: 1px;
+	 margin-top: 1em;
+	 margin-left: 1.5em;
+	 margin-right: 1em;
+	 margin-bottom: 4em;
+	 height: 175px;
+	 width: 175px;
+  }
+
+
+
+
+
+/* the styles for the aside*******************************************/
+
+aside{
+	width: 215px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+aside h2{
+	font-size: 150%;
+	color: #4CC3A2;
+	padding-top: .5em;
+	padding-bottom: .25em; 
+	
+	margin-top:0;
+	margin-left:0;
+	margin-right:0;
+	margin-bottom:0;
+	
+}
+
+
+
+aside h3{
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+aside img{
+	padding-bottom: 1em;
+}
+
+a:hover, a:focus { font-style: italic;}
+a:link {font-style: normal;}
+
+/* the styles for the footer */
+footer{
+	clear: both;
+}
+
+footer p{
+	text-align: center;
+	background-color:#177C60;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+}
+
+footer span{
+	color:white;
+}
