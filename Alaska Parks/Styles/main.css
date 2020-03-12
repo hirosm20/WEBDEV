@@ -1,0 +1,223 @@
+/* the styles for the elements */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*This for the body************************************************************/
+body {
+  background-color: white;
+   margin: 0;
+   padding: 0;
+    
+}
+header h1 {
+  color: #015C65;
+  text-align: center;
+  font-family: verdana;
+ 
+  margin-left: 20px;
+}
+body h3 {
+  font-family: arial;
+  font-size: 20px;
+  color:#028E9B;  
+}
+
+/*This is for the navigation menu***********************************************/
+#mobile_menu{
+	display: none;
+}
+#nav_menu a .current{
+	color: #9B3FBF;
+}
+#nav_menu ul{
+	list-style-type: none;
+	margin: 0 0;
+	padding: 0 0;
+  position: relative;
+  float:left;
+}
+#nav_menu ul li{
+	float: left;
+  width: 20%;
+  height: 100px;
+  background-color:lightblue;
+  padding-left: 0em;
+  
+}
+#nav_menu img{
+  padding-top: 0em;
+  padding-left: 6em;
+}
+#nav_menu ul li a{
+	display: block;
+  width: 500px;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	text-decoration: none;
+  color: #028E9B;
+  font-weight: bold;
+  font-size: 20px;
+  height: 100px;
+}
+
+
+#nav_menu ul li:hover{
+	display: block;
+	background-color:lightblue;
+}
+
+/*This is for main************************************************/
+main{
+margin-left: 20em;
+margin-right:20em;
+margin-top:2em;
+}
+main p {
+  font-family: arial;
+  font-size: 20px;
+  color:#028E9B;
+}
+main ul{
+ padding: 0 10em;
+}
+main ul li{
+  font-family: arial;
+  font-size: 20px;
+  color: #028E9B;
+}
+
+/*This is for the article******************************************************/
+article{
+	padding-top:.5em;
+	padding-bottom: .5em;
+ }
+article img{
+  border-style:solid;
+  border-width: 1px;
+  height: 175px;
+  max-width: 100%;
+  min-width:150px;
+  display: block;
+  
+  margin: 0 auto;
+
+ }
+ article p {
+   padding-left:2em;
+ }
+article h3{
+   padding-left: 2em;
+ }
+ article div{
+  display: grid;
+  grid-column-gap: 5px;
+  justify-content: center;
+  align-content: center;
+  min-width: 100%;
+  min-height: 100%;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.gallery_img{
+ 
+  object-fit: cover;
+  display:block;
+  
+}
+
+ /*This is for the footer*******************************************************/
+footer{
+	clear: both;
+}
+footer p{
+	text-align: center;
+  color: #028E9B;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+/*This is to make the youtube video responsive****************/
+.video-container{
+  position: relative;
+  padding-bottom: 2em;
+  padding-top: 6em;
+  height: 600%;
+  display:block;
+  margin: 0 auto;
+}
+/*This is the formatting for the gallery*********************/
+.snippet-result-code {
+  height: 500px;
+}
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+}
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+/*This meadia query is to make the galley responsive**************/
+@media (max-width: 1200px) {
+  #photos {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+/*These are the media queries to make the page responsive**********************************/
+/* Media query for tablet in portrait view*/
+@media only screen and (max-width: 959px){
+	section h1{font-size: 135%;}
+	section h2{font-size: 120%;}
+	aside h2{font-size: 120%;}
+
+}
+/* Media query for phone in landscape orientation*/
+@media only screen and (max-width: 767px){
+	header img{float: none; max-width: 30%;}
+	header{	text-align:center;}
+	section{float: none;width: 96%;}
+	aside{float:none;padding-right: 2%;width: 96%;}
+	aside div{column-count:2;}
+	#nav_menu{display: none;}
+	#mobile_menu{display: block;}
+	.slick_nav menu{background-color:#4CC3A2 !important;}
+}
+/* Media query for phone in portrait orientation*/
+@media only screen and (max-width: 479px){
+	body{max-width: 480px;font-size: 90%;}
+}
+
+
+
